@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog App</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="post-list"></div>
+  <div id="post-detail">Select a post to view its details.</div>
+
+  <form id="new-post-form">
+    <input type="text" name="title" placeholder="Title" required />
+    <textarea name="content" placeholder="Content" required></textarea>
+    <input type="text" name="author" placeholder="Author" required />
+    <input type="file" name="imageFile" accept="image/*" />
+    <button type="submit">Add Post</button>
+  </form>
+
+  <form id="edit-post-form" class="hidden">
+    <input type="text" id="edit-title" placeholder="Edit Title" />
+    <textarea id="edit-content" placeholder="Edit Content"></textarea>
+    <button type="submit">Update</button>
+    <button type="button" id="cancel-edit">Cancel</button>
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+</html>
